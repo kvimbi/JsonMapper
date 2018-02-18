@@ -1,6 +1,6 @@
 {
   "name": "JsonMapper",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Small js json mapping library",
   "main": "index.js",
   "repository": "https://github.com/kvimbi/JsonMapper.git",
