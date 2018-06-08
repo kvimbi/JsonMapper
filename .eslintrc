@@ -1,0 +1,15 @@
+{
+  "extends": "standard",
+  "globals": {
+    "fetch": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "jest": true,
+    "test": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"]
+  },
+  "parser": "babel-eslint"
+}
