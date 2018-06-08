@@ -1,49 +1,49 @@
-//@flow
-
+// @flow
 
 export class Int {
-  static clsName() {
-    return 'Int';
+  static clsName () {
+    return 'Int'
   }
 
-  radix: number;
-  constructor(radix: number) {
-    this.radix = radix;
+  radix: number
+
+  constructor (radix: number) {
+    this.radix = radix
   }
 }
 
 export class Float {
-  static clsName() {
-    return 'Float';
+  static clsName () {
+    return 'Float'
   }
 
-  radix: number;
+  radix: number
 
-  constructor(radix: number) {
-    this.radix = radix;
+  constructor (radix: number) {
+    this.radix = radix
   }
 }
 
 export class Complex {
-  static clsName() {
-    return 'Complex';
+  static clsName () {
+    return 'Complex'
   }
 
-  embeddedType: any;
+  embeddedType: any
 
-  constructor(embeddedType: any) {
-    this.embeddedType = embeddedType;
+  constructor (embeddedType: any) {
+    this.embeddedType = embeddedType
   }
 }
 
 export class ComplexArray {
-  static clsName() {
-    return 'ComplexArray';
+  static clsName () {
+    return 'ComplexArray'
   }
 
-  embeddedType: any;
+  embeddedType: any
 
-  constructor(embeddedType: any) {
-    this.embeddedType = embeddedType;
+  constructor (embeddedType: any) {
+    this.embeddedType = embeddedType
   }
 }
