@@ -9,7 +9,7 @@ export type JsonMapper = (value: any) => any;
  * @param toName - new name in target json object
  * @param type - mapping type (ie. Int, Float, Complex, ComplexArray)
  * @param mapper - custom mapper function
- * @param defaultValue - default value to use when the attribute is missing in source json object. Alse see {@link OptionsType#fillMissing}
+ * @param defaultValue - default value to use when the attribute is missing in source json object. Also see {@link OptionsType#fillMissing}
  * @param exclude - excludes this attribute from mapping even if {@link OptionsType#fillMissing} is true
  */
 export type MappingOptionsType = {
