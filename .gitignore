@@ -1,0 +1,15 @@
+
+# User-specific stuff
+.idea
+
+# File-based project format
+*.iws
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+lib
+
+node_modules
+
+yarn-error.log
