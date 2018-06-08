@@ -1,17 +1,11 @@
-import mapJson, {
-  Complex,
-  ComplexArray,
-  Float,
-  Int,
-  UnixTimestampStringDateMapper,
-} from './TypeMapping';
-import BigNumber from 'bignumber.js';
+import mapJson from '../src/TypeMapper';
+import {Complex, ComplexArray, Float, Int} from '../src/MappingTypeDefs'
+import {UnixTimestampStringDateMapper} from '../src/UnixTimestampStringDateMapper'
 
 const TestType = {
   a: String,
   b: Int,
   c: Date,
-  d: BigNumber,
   e: Float,
   f: {
     mapper: UnixTimestampStringDateMapper,
@@ -73,14 +67,6 @@ describe('Type mapping testing', () => {
     expect(result).toEqual({ a: true });
   });
 
-  it('maps string big number correctly ignoring undocumented', () => {
-    const result = mapJson({ d: '56478356348.34543543543534' }, TestType, {});
-    expect(typeof result.d).toBe('object');
-    expect(
-      result.d.comparedTo(new BigNumber('56478356348.34543543543534'))
-    ).toBe(0);
-  });
-
   it('maps float number correctly ignoring undocumented', () => {
     const result = mapJson({ e: '56478356348.34543543543534' }, TestType, {});
     expect(typeof result.e).toBe('number');
@@ -115,7 +101,6 @@ describe('Type mapping testing', () => {
       a: null,
       b: null,
       c: null,
-      d: null,
       e: null,
       f: null,
       g: 'This is a default string value',
