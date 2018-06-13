@@ -1,6 +1,6 @@
 {
   "name": "json-model-mapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Small js json mapping library",
   "repository": "https://github.com/kvimbi/JsonMapper.git",
   "author": "Kvimbi",
